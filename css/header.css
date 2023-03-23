@@ -204,10 +204,18 @@
     .mobile__nav-wrapper.active {
         transform: translate(-50%, 60px);
     }
+
+    .mobile__login {
+        padding: 10px 20px;
+    }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .header__wrapper {
         padding: 15px 30px;
+    }
+
+    .header__logo-link {
+        max-width: 160px;
     }
 }
