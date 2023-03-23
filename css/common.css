@@ -1,5 +1,4 @@
 :root {
-    font-family: 'Space Mono', monospace;
     /* font-family: 'Mulish', sans-serif; */
     /* font-family: 'Work Sans', sans-serif; */
     --color-white: #FFFFFF;
@@ -7,10 +6,33 @@
     --color-gray: #3B3B3B;
     --color-blackGray: #2B2B2B; 
     --color-purple: #A259FF;
+    
+    font-family: 'Space Mono', monospace;
+
+    background-color: var(--color-white);
+    
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.container {
+    max-width: 1110px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.gradient-hover {
+    background-size: 300% 100%;
+    background-image: linear-gradient(100.92deg, #A259FF 13.57%, #FF6250 97.65%);
+    transition: .4s;
+}
+
+.gradient-hover:hover {
+    transform: translateY(-3px);
+    background-position: 100% 0;
+    transition: .4s;
 }
